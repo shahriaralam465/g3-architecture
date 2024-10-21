@@ -1,9 +1,243 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Body font */
+body {
+    margin: 0 auto;
+}
 
 .primary-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* shared Styles */
+.display-flex {
+    display: flex;
+}
+
+.btn-primary {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "Work Sans", sans-serif;
+    line-height: 23px;
+    text-align: center;
+    padding: 20px 25px;
+    background-color: rgb(255, 144, 14);
+    border-radius: 8px;
+    border: none;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main>section {
+    margin-top: 130px;
+}
+.section-title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* dark-2 */
+.text-gray {
+    color: rgb(66, 66, 66);
+}
+
+/* dark-3 */
+.text-light-gray {
+    color: rgb(114, 114, 114);
+}
+
+/* dark-3 */
+.text-dark-gray {
+    color: rgb(66, 66, 66);
+}
+
+/* dark-4 */
+.text-dark {
+    color: rgb(19, 19, 19);
+}
+
+/* Orange color */
+.orange {
+    color: rgb(255, 144, 14);
+}
+
+/* Light orange background */
+.bg-light {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* header styles */
+
+/* navbar related styles */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .brand {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 53px;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.navbar,
+.container,
+.banner {
+    /* border: 1px solid red; */
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* banner related styles */
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    /* border: 1px solid red; */
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    margin: 0;
+    /* border: 1px solid red; */
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-description {
+    /* border: 1px solid red; */
+    font-size: 1rem;
+}
+
+.banner-image {
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.teams {
+    gap: 76px;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-features {
+    max-width: 537px;
+}
+
+.feature-title>#part-1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.feature-title>#part-2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.feature-title>#part-3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.feature-description {
+    font-size: 16px;
+    text-align-last: left;
+}
+
+
+
+
+
+
+
+/* Mobile responsive area */
+@media screen and (max-width:576px) {
+    header {
+        padding: 10px;
+    }
+
+    .navbar,
+    .teams {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar .brand,
+    .banner-title {
+        margin: 0;
+        font-size: 3rem;
+    }
+
+    .teams {
+        width: 100%;
+    }
+
+    .team-img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .team-img-container img {
+        width: 100%;
+    }
+
+    main>section {
+        margin-top: 20px;
+    }
+
+    .our-features {
+        padding: 10px;
+    }
+}
+
+
+
+/* Table Device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    main>section {
+        margin-top: 20px;
+    }
+
+    .teams {
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+
+    .our-features {
+        max-width: 100%;
+    }
 }
