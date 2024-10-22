@@ -38,8 +38,10 @@ main {
 main>section {
     margin-top: 130px;
 }
-.section-title{
-    font-size: 3rem;
+
+.section-title {
+    font-size: 3.31rem;
+    margin:10px 0px;
     font-weight: 700;
 }
 
@@ -110,7 +112,7 @@ main>section {
 
 /* banner related styles */
 
-.banner {
+.banner, .fact{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,9 +180,41 @@ main>section {
     text-align-last: left;
 }
 
+/* Some fact related styles */
+.section-description{
+    width: 540px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.fact{
+    margin: 0;
+    text-align: center;
+    width: 240px;
+    height: 240px;
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+}
+.fact-number{
+    font-size:3rem;
+    margin: 0;
+}
+.fact-name{
+    margin: 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
 
-
-
+/* Sponsors section styles */
+.sponsor-info{
+    border: 2px solid red;
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
 
 
 
@@ -200,17 +234,20 @@ main>section {
     .navbar .brand,
     .banner-title {
         margin: 0;
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .teams {
         width: 100%;
     }
 
-    .team-img-container {
+    .team-img-container, .fact-container {
         grid-template-columns: repeat(1, 1fr);
     }
-
+    .fact-container{
+        gap: 20px;
+        justify-items: center;
+    }
     .team-img-container img {
         width: 100%;
     }
@@ -221,6 +258,14 @@ main>section {
 
     .our-features {
         padding: 10px;
+    }
+    .section-title{
+        margin:0 10px;
+    }
+    .section-description{
+        margin-bottom: 10px;
+        max-width: 100%;
+        text-align: center;
     }
 }
 
